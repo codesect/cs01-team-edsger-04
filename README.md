@@ -14,11 +14,13 @@
 
 1. ReactJS - [Source](https://reactjs.org)
 2. D3.jS   - [Source](https://d3js.org)
-3. Axios   - [source](https://axios.org)
+
 
 ## Install and Build
 
 > Describe how to install, build, and test your app
+
+"npm install" to install all the necessary dependencies.
 
 ## Contributors
 
