@@ -10,12 +10,11 @@
 
 > Add a list of tools used like frameworks, libraries, task runners, test runners, bundlers, linters, template engines, etc.
 
-
->Framework
-[ReactJS] - [Source](https://reactjs.org) 
 >Library
-[D3.jS]   - [Source](https://d3js.org)
 
+1. ReactJS - [Source](https://reactjs.org)
+2. D3.jS   - [Source](https://d3js.org)
+3. Axios   - [source](https://axios.org)
 
 ## Install and Build
 
