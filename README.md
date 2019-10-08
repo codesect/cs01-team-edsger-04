@@ -8,7 +8,7 @@
 
 ## Tools Used
 
-> Add a list of tools used like frameworks, libraries, task runners, test runners, bundlers, linters, template engines, etc.
+> Add a list of tools used like frameworks, libraries, task runners, test runners, bundlers, linters, template engines, etc.1a
 
 >Library
 
@@ -20,7 +20,8 @@
 
 > Describe how to install, build, and test your app
 
-"npm install" to install all the necessary dependencies.
+to  install necessary tools run "npm install" script in root directory root directory --> (cs01-team-edsger-04/)
+
 
 ## Contributors
 
