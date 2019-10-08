@@ -8,7 +8,7 @@
 
 ## Tools Used
 
-> Add a list of tools used like frameworks, libraries, task runners, test runners, bundlers, linters, template engines, etc.1a
+> Add a list of tools used like frameworks, libraries, task runners, test runners, bundlers, linters, template engines, etc.
 
 >Library
 
