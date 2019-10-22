@@ -13,8 +13,15 @@ class App extends React.Component {
       countries: [],
       dataSources: [],
       gases: [],
-      sectors: []
+      sectors: [],
+      countrySelected:"India"
     };
+    this.countrySelectedCallback = this.countrySelectedCallback.bind(this);
+  }
+  countrySelectedCallback(value){
+    console.log(value);
+    this.setState({countrySelected:value });
+    console.log(this.state.countrySelected);
   }
 
   componentDidMount() {
@@ -39,6 +46,19 @@ class App extends React.Component {
           countries: initialList
         });
       }); */
+
+
+//https://www.climatewatchdata.org/api/v1/emissions?gas=179&location=IND&sector=509&source=42
+
+
+// Query Parameters
+// data_sources - source_ids[] - emission data source id (CAIT, PIK, UNFCCC)      [42]
+// gases - gas_ids[] -  gas id                                    [179]
+// sectors - sector_ids[] - sector id                               [509]
+// regions/country - regions[] - region ISO code 3                       [IND]
+
+
+
 
     fetch(
       "https://www.climatewatchdata.org/api/v1/data/historical_emissions/data_sources"
@@ -94,7 +114,7 @@ class App extends React.Component {
     return (
       <div>
         <label> Country </label>
-        <SelectCountry countries={countries} />
+        <SelectCountry countries={countries} countrySelectedCallback={this.countrySelectedCallback} />
         <label> Data Source </label>
         <SelectDataSource dataSources={dataSources} />
         <label> Gas </label>
@@ -113,3 +133,4 @@ export default connect(
   mapStateToProps,
   { fetchCountries }
 )(App);
+
