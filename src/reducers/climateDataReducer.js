@@ -1,4 +1,4 @@
-import _ from "lodash";
+//import _ from "lodash";
 import { FETCH_COUNTRIES } from "../actions/types";
 var initialState = {
   countries: []

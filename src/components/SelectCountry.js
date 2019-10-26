@@ -12,7 +12,7 @@ class SelectCountry extends React.Component {
   render() {
     let countries = this.props.countries;
     let optionItems = countries.map(item => (
-      <option key={item.iso_code3}>{item.pik_name}</option>
+      <option key={item.iso_code3} value={item.iso_code3}>{item.pik_name}</option>
     ));
 
     return (
